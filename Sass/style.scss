@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #f6f6f6;
+  padding: 30px;
+
+  .form-div {
+    display: flex;
+    align-items: center;
+
+    // Log in div start
+
+    .login-div {
+      background-color: #fff;
+      padding: 60px;
+      width: 50%;
+      height: 580px;
+
+      .signup-header {
+        text-align: center;
+        line-height: 25px;
+
+        .signup-btn {
+          display: inline-block;
+          background-color: #fff;
+          margin: 20px 0;
+          text-align: center;
+          border-radius: 50px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+      }
+
+      //  form div start
+      form {
+        .input-div {
+          margin-top: 10px;
+
+          label {
+            display: inline-block;
+            padding: 5px 0;
+            font-weight: bold;
+          }
+
+          input {
+            border: none;
+            border-radius: 50px;
+            padding: 5px 5px;
+            width: 100%;
+          }
+        }
+
+        // account create button
+        .account-create {
+          margin-top: 20px;
+          text-align: center;
+          margin-bottom: 30px;
+
+          button {
+            border: none;
+            width: 100%;
+            border-radius: 50px;
+            background-color: blue;
+            color: white;
+            padding: 5px 0;
+            margin-bottom: 10px;
+          }
+
+          a {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+      //  form div end
+
+      // copy right div start
+      .copy-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          display: flex;
+          gap: 10px;
+
+          a {
+            color: black;
+          }
+        }
+      }
+      // copy right div end
+    }
+    // Log in div end
+
+    //
+    // About div start
+    .about-div {
+      background: rgb(238, 174, 202);
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      width: 50%;
+      height: 580px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 0 60px;
+
+      // about logo start
+      .figma-lpgo {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+
+        .fa-figma {
+          color: indigo;
+          font-size: 20px;
+        }
+      }
+      // about logo end
+
+      // about header and description start
+      .about-heading {
+        width: 250px;
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      .about-description {
+        width: 250px;
+        margin-bottom: 30px;
+      }
+      // about header and description end
+    }
+    // About div end
+  }
+}
+
+/*  */
+
+.profile-div {
+  display: flex;
+  gap: 10px;
+
+  .profiles {
+    //
+    img {
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+    }
+
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+}
+
+//  media query
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+
+    //  login div start
+    .login-div {
+      //
+      .copy-right {
+        font-size: 12px;
+      }
+    }
+    //  login div end
+
+    //  about div start
+    .about-div {
+      .profile-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    //  about div end
+  }
+  //   section end
+}
+
+@media screen and (max-width: 640px) {
+  section {
+    padding: 10px;
+
+    .form-div {
+      // login start
+      .login-div {
+        //
+        .copy-right {
+          font-size: 10px;
+        }
+        //
+        .signup-header {
+          .signup-btn {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+        //
+        .account-create {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      // login end
+
+      // about start
+      .about-div {
+        //
+        .about-heading {
+          width: 200px;
+          font-size: 30px;
+        }
+
+        .about-description {
+          width: 200px;
+          font-size: 12px;
+        }
+
+        .profile-div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      // about end
+    }
+  }
+}

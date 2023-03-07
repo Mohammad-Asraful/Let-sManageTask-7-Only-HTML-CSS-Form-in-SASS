@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+section .form-div {
+  display: flex;
+  align-items: center;
+}
+section .form-div .login-div {
+  background-color: #fff;
+  padding: 60px;
+  width: 50%;
+  height: 580px;
+}
+section .form-div .login-div .signup-header {
+  text-align: center;
+  line-height: 25px;
+}
+section .form-div .login-div .signup-header .signup-btn {
+  display: inline-block;
+  background-color: #fff;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 50px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+section .form-div .login-div form .input-div {
+  margin-top: 10px;
+}
+section .form-div .login-div form .input-div label {
+  display: inline-block;
+  padding: 5px 0;
+  font-weight: bold;
+}
+section .form-div .login-div form .input-div input {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 5px;
+  width: 100%;
+}
+section .form-div .login-div form .account-create {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section .form-div .login-div form .account-create button {
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+section .form-div .login-div form .account-create a {
+  color: black;
+  font-weight: bold;
+}
+section .form-div .login-div .copy-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .form-div .login-div .copy-right div {
+  display: flex;
+  gap: 10px;
+}
+section .form-div .login-div .copy-right div a {
+  color: black;
+}
+section .form-div .about-div {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  width: 50%;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+}
+section .form-div .about-div .figma-lpgo {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+section .form-div .about-div .figma-lpgo .fa-figma {
+  color: indigo;
+  font-size: 20px;
+}
+section .form-div .about-div .about-heading {
+  width: 250px;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+section .form-div .about-div .about-description {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+/*  */
+.profile-div {
+  display: flex;
+  gap: 10px;
+}
+.profile-div .profiles img {
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+}
+.profile-div .profiles:first-child {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+  section .login-div .copy-right {
+    font-size: 12px;
+  }
+  section .about-div .profile-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  section {
+    padding: 10px;
+  }
+  section .form-div .login-div .copy-right {
+    font-size: 10px;
+  }
+  section .form-div .login-div .signup-header .signup-btn span {
+    font-size: 12px;
+  }
+  section .form-div .login-div .account-create p {
+    font-size: 12px;
+  }
+  section .form-div .about-div .about-heading {
+    width: 200px;
+    font-size: 30px;
+  }
+  section .form-div .about-div .about-description {
+    width: 200px;
+    font-size: 12px;
+  }
+  section .form-div .about-div .profile-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
