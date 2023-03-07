@@ -11,6 +11,26 @@
   margin: 0 auto;
 }
 
+// variable
+$color-white: #fff;
+// variable
+
+// mixin
+@mixin flexProps {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flexColumnRow($columnOrRow) {
+  display: flex;
+  flex-direction: $columnOrRow;
+}
+
+@mixin try($check) {
+  color: $check;
+}
+// mixin
+
 section {
   background-color: #f6f6f6;
   padding: 30px;
@@ -22,7 +42,7 @@ section {
     // Log in div start
 
     .login-div {
-      background-color: #fff;
+      background-color: $color-white;
       padding: 60px;
       width: 50%;
       height: 580px;
@@ -33,7 +53,7 @@ section {
 
         .signup-btn {
           display: inline-block;
-          background-color: #fff;
+          background-color: $color-white;
           margin: 20px 0;
           text-align: center;
           border-radius: 50px;
@@ -115,9 +135,8 @@ section {
       );
       width: 50%;
       height: 580px;
-      display: flex;
+      @include flexProps;
       flex-direction: column;
-      justify-content: center;
 
       padding: 0 60px;
 
@@ -126,8 +145,7 @@ section {
         background-color: #fff;
         width: 30px;
         height: 30px;
-        display: flex;
-        justify-content: center;
+        @include flexProps;
         align-items: center;
         border-radius: 50px;
 
@@ -195,8 +213,7 @@ section {
     //  about div start
     .about-div {
       .profile-div {
-        display: flex;
-        flex-direction: row;
+        @include flexColumnRow(row);
         align-items: center;
       }
     }
@@ -247,8 +264,7 @@ section {
         }
 
         .profile-div {
-          display: flex;
-          flex-direction: column;
+          @include flexColumnRow(column);
           align-items: center;
         }
       }
