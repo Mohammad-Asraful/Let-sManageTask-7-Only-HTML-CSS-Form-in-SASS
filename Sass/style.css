@@ -65,6 +65,7 @@ section .form-div .login-div form .account-create button {
   color: white;
   padding: 5px 0;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 section .form-div .login-div form .account-create a {
   color: black;
